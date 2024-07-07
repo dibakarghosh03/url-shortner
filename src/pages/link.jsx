@@ -59,11 +59,11 @@ const Link = () => {
           {url?.title}
         </span>
         <a 
-          href={`http://localhost:4173/${link}`} 
+          href={`https://trimmrr.netlify.app/${link}`} 
           
           className='text-2xl sm:text-4xl lg:2xl xl:text-4xl text-blue-400 font-bold hover:underline cursor-pointer'
         >
-          http://localhost:4173/{link}
+          https://trimmrr.netlify.app/{link}
         </a>
         <a 
           href={`${url?.original_url}`} 
@@ -80,7 +80,7 @@ const Link = () => {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`http://localhost:5173/${link}`)
+                navigator.clipboard.writeText(`https://trimmrr.netlify.app/${link}`)
               }
             >
               <Copy />
